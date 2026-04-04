@@ -20,7 +20,7 @@ params = {
     "vs_currency": "usd",
     "days": "30"
 }
-
+# test change
 data = requests.get(url, params=params).json()
 prices = data["prices"]
 
