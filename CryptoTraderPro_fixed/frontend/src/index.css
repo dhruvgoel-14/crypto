@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --color-background-primary: #0f1117;
+  --color-background-secondary: #161b27;
+  --color-background-tertiary: #0a0d14;
+  --color-border-primary: #2a3045;
+  --color-border-tertiary: #1e2538;
+  --color-text-primary: #e8ecf4;
+  --color-text-secondary: #7a8499;
+  --color-text-danger: #ff5a5a;
+  --color-background-danger: rgba(255,90,90,0.08);
+  --border-radius-lg: 14px;
+  --border-radius-md: 8px;
+  --green: #00e09e;
+  --red: #ff4f4f;
+  --accent: #5b8def;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-background-tertiary);
+  color: var(--color-text-primary);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+input {
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--border-radius-md);
+  color: var(--color-text-primary);
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px 12px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+input:focus {
+  border-color: var(--accent);
+}
+
+button {
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-primary);
+  border-radius: 2px;
+}
